@@ -9,7 +9,7 @@ install:
   - cd c:\projects\build
   - build.bat
 build_script:
-- cmd: >-
+  - cmd: >-
   - msbuild build\build.csproj
 artifacts:
 - path: '*.nupkg'
