@@ -10,7 +10,7 @@ install:
   - build.bat
 build_script:
   - cmd: >-
-  - msbuild build\build.csproj
+  - msbuild c:\projects\build\build.csproj
 artifacts:
 - path: '*.nupkg'
   name: Stefan Dyulgerov
