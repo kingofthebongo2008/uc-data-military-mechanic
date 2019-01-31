@@ -6,7 +6,11 @@ configuration: Release
 platform: x64
 clone_folder: c:\projects
 install:
+  - cd c:\projects\build
+
   - c:\projects\build\build.bat
+
+  - cd c:\projects
 build_script:
   - cmd: >-
   - msbuild c:\projects\build\build.csproj
