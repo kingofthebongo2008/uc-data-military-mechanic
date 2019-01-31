@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>uc-imaging</id>
+    <id>uc-data-military-mechanic</id>
     <version>@version</version>
-    <title>uc-imaging library</title>
+    <title>uc-data-military-mechanic</title>
     <authors>Stefan Dyulgerov</authors>
     <owners>kingofthebongo2009</owners>
     <licenseUrl>http://opensource.org/licenses/MS-PL</licenseUrl>
@@ -14,8 +14,8 @@
     <tags>imaging,unique,uc,creator</tags>
   </metadata>
   <files>
-    <file src = "include\**" target = "build/native/include" />
-    <file src = "build\uc-imaging.props"   target = "build/native" />
-    <file src = "build\uc-imaging.targets" target = "build/native" />
+    <file src = "bin\**" target = "lib\native" />
+    <file src = "build\uc-data-military-mechanic.props"     target = "build/native" />
+    <file src = "build\uc-data-military-mechanic.targets"   target = "build/native" />
   </files>
 </package>
