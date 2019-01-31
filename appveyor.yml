@@ -5,6 +5,12 @@ image: Visual Studio 2019 Preview
 configuration: Release
 platform: x64
 clone_folder: c:\projects
+install:
+  - cd c:\projects\build
+  - build.bat
+build_script:
+- cmd: >-
+  - msbuild build\build.csproj
 artifacts:
 - path: '*.nupkg'
   name: Stefan Dyulgerov
