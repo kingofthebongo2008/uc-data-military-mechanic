@@ -1,3 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)\..\..\lib\native\animations\military_mechanic.animation">
+      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'appdata/animations/military_mechanic.animation'))</Link>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+
+    <None Include="$(MSBuildThisFileDirectory)\..\..\lib\native\models\military_mechanic.derivatives_skinned_model.model">
+      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'appdata/models/military_mechanic.derivatives_skinned_model.model'))</Link>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+
+    <None Include="$(MSBuildThisFileDirectory)\..\..\lib\native\skeletons\military_mechanic.skeleton">
+      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'appdata/skeletons/military_mechanic.derivatives_skinned_model.model'))</Link>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+
+  </ItemGroup>
+
 </Project>
