@@ -14,8 +14,14 @@
     <tags>imaging,unique,uc,creator</tags>
   </metadata>
   <files>
+
     <file src = "bin\**" target = "lib\native" />
     <file src = "build\uc-data-military-mechanic.props"     target = "build/native" />
     <file src = "build\uc-data-military-mechanic.targets"   target = "build/native" />
+
+    <file src = "bin\**" target = "lib\uap" />
+    <file src = "build\uc-data-military-mechanic.props"     target = "build/uap" />
+    <file src = "build\uc-data-military-mechanic.targets"   target = "build/uap" />
+
   </files>
 </package>
