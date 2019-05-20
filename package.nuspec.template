@@ -16,12 +16,12 @@
   <files>
 
     <file src = "bin\**" target = "lib\native" />
-    <file src = "build\uc-data-military-mechanic.props"     target = "build/native" />
-    <file src = "build\uc-data-military-mechanic.targets"   target = "build/native" />
+    <file src = "build\uc-data-military-mechanic-native.props"     target = "build/native/uc-data-military-mechanic.props" />
+    <file src = "build\uc-data-military-mechanic-native.targets"   target = "build/native/uc-data-military-mechanic.targets" />
 
     <file src = "bin\**" target = "lib\uap" />
-    <file src = "build\uc-data-military-mechanic.props"     target = "build/uap" />
-    <file src = "build\uc-data-military-mechanic.targets"   target = "build/uap" />
+    <file src = "build\uc-data-military-mechanic-uap.props"     target = "build/uap/uc-data-military-mechanic.props" />
+    <file src = "build\uc-data-military-mechanic-uap.targets"   target = "build/uap/uc-data-military-mechanic.targets" />
 
   </files>
 </package>
