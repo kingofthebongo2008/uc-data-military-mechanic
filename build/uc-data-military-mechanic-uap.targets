@@ -2,20 +2,20 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)\..\..\lib\uap\animations\military_mechanic.animation">
-      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'appdata\animations/military_mechanic.animation'))</Link>
+    <Content Include="$(MSBuildThisFileDirectory)\..\..\lib\uap\animations\military_mechanic.animation">
+      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'Assets\animations\military_mechanic.animation'))</Link>
       <DeploymentContent>true</DeploymentContent>
-    </None>
+    </Content>
 
-    <None Include="$(MSBuildThisFileDirectory)\..\..\lib\uap\models\military_mechanic.derivatives_skinned_model.model">
-      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'appdata\models\military_mechanic.derivatives_skinned_model.model'))</Link>
+    <Content Include="$(MSBuildThisFileDirectory)\..\..\lib\uap\models\military_mechanic.derivatives_skinned_model.model">
+      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'Assets\models\military_mechanic.derivatives_skinned_model.model'))</Link>
       <DeploymentContent>true</DeploymentContent>
-    </None>
+    </Content>
 
-    <None Include="$(MSBuildThisFileDirectory)\..\..\lib\uap\skeletons\military_mechanic.skeleton">
-      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'appdata\skeletons\military_mechanic.derivatives_skinned_model.model'))</Link>
+    <Content Include="$(MSBuildThisFileDirectory)\..\..\lib\uap\skeletons\military_mechanic.skeleton">
+      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'Assets\skeletons\military_mechanic.derivatives_skinned_model.model'))</Link>
       <DeploymentContent>true</DeploymentContent>
-    </None>
+    </Content>
 
   </ItemGroup>
 
