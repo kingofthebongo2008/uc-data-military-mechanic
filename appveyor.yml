@@ -4,16 +4,16 @@ pull_requests:
 image: Visual Studio 2019
 configuration: Release
 platform: x64
-clone_folder: c:\projects
+clone_folder: c:\projects-m0hq4vq9b746kl9a
 install:
-  - cd c:\projects\build
+  - cd c:\projects-m0hq4vq9b746kl9a\build
 
-  - c:\projects\build\build.bat
+  - c:\projects-m0hq4vq9b746kl9a\build\build.bat
 
-  - cd c:\projects
+  - cd c:\projects-m0hq4vq9b746kl9a
 build_script:
   - cmd: >-
-  - msbuild c:\projects\build\build.csproj
+  - msbuild c:\projects-m0hq4vq9b746kl9a\build\build.csproj
 artifacts:
 - path: '*.nupkg'
   name: Stefan Dyulgerov
