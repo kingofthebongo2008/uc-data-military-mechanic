@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\uc-tools-skeleton.1.0.16\build\native\uc-tools-skeleton.props" Condition="Exists('packages\uc-tools-skeleton.1.0.16\build\native\uc-tools-skeleton.props')" />
-  <Import Project="packages\uc-tools-model.1.0.14\build\native\uc-tools-model.props" Condition="Exists('packages\uc-tools-model.1.0.14\build\native\uc-tools-model.props')" />
-  <Import Project="packages\uc-tools-animation.1.0.10\build\native\uc-tools-animation.props" Condition="Exists('packages\uc-tools-animation.1.0.10\build\native\uc-tools-animation.props')" />
+  <Import Project="packages\uc-tools-skeleton.1.0.17\build\native\uc-tools-skeleton.props" Condition="Exists('packages\uc-tools-skeleton.1.0.17\build\native\uc-tools-skeleton.props')" />
+  <Import Project="packages\uc-tools-model.1.0.16\build\native\uc-tools-model.props" Condition="Exists('packages\uc-tools-model.1.0.16\build\native\uc-tools-model.props')" />
+  <Import Project="packages\uc-tools-animation.1.0.12\build\native\uc-tools-animation.props" Condition="Exists('packages\uc-tools-animation.1.0.12\build\native\uc-tools-animation.props')" />
   <PropertyGroup>
     <TargetFramework>native</TargetFramework>
   </PropertyGroup>
@@ -97,27 +97,27 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Compressonator_MD_DLL">
-      <HintPath>packages\uc-tools-model.1.0.14\lib\native\Compressonator_MD_DLL.dll</HintPath>
+      <HintPath>packages\uc-tools-model.1.0.16\lib\native\Compressonator_MD_DLL.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="libfbxsdk">
-      <HintPath>packages\uc-tools-skeleton.1.0.16\lib\native\libfbxsdk.dll</HintPath>
+      <HintPath>packages\uc-tools-skeleton.1.0.17\lib\native\libfbxsdk.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="lzham_x64">
-      <HintPath>packages\uc-tools-skeleton.1.0.16\lib\native\lzham_x64.dll</HintPath>
+      <HintPath>packages\uc-tools-skeleton.1.0.17\lib\native\lzham_x64.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="uc-animation">
-      <HintPath>packages\uc-tools-animation.1.0.8\lib\native\uc-animation.exe</HintPath>
+      <HintPath>packages\uc-tools-animation.1.0.12\lib\native\uc-animation.exe</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="uc-model">
-      <HintPath>packages\uc-tools-model.1.0.14\lib\native\uc-model.exe</HintPath>
+      <HintPath>packages\uc-tools-model.1.0.16\lib\native\uc-model.exe</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="uc-skeleton">
-      <HintPath>packages\uc-tools-skeleton.1.0.16\lib\native\uc-skeleton.exe</HintPath>
+      <HintPath>packages\uc-tools-skeleton.1.0.17\lib\native\uc-skeleton.exe</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -127,14 +127,14 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('packages\uc-tools-animation.1.0.10\build\native\uc-tools-animation.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-animation.1.0.10\build\native\uc-tools-animation.props'))" />
-    <Error Condition="!Exists('packages\uc-tools-animation.1.0.10\build\native\uc-tools-animation.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-animation.1.0.10\build\native\uc-tools-animation.targets'))" />
-    <Error Condition="!Exists('packages\uc-tools-model.1.0.14\build\native\uc-tools-model.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-model.1.0.14\build\native\uc-tools-model.props'))" />
-    <Error Condition="!Exists('packages\uc-tools-model.1.0.14\build\native\uc-tools-model.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-model.1.0.14\build\native\uc-tools-model.targets'))" />
-    <Error Condition="!Exists('packages\uc-tools-skeleton.1.0.16\build\native\uc-tools-skeleton.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-skeleton.1.0.16\build\native\uc-tools-skeleton.props'))" />
-    <Error Condition="!Exists('packages\uc-tools-skeleton.1.0.16\build\native\uc-tools-skeleton.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-skeleton.1.0.16\build\native\uc-tools-skeleton.targets'))" />
+    <Error Condition="!Exists('packages\uc-tools-animation.1.0.12\build\native\uc-tools-animation.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-animation.1.0.12\build\native\uc-tools-animation.props'))" />
+    <Error Condition="!Exists('packages\uc-tools-animation.1.0.12\build\native\uc-tools-animation.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-animation.1.0.12\build\native\uc-tools-animation.targets'))" />
+    <Error Condition="!Exists('packages\uc-tools-model.1.0.16\build\native\uc-tools-model.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-model.1.0.16\build\native\uc-tools-model.props'))" />
+    <Error Condition="!Exists('packages\uc-tools-model.1.0.16\build\native\uc-tools-model.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-model.1.0.16\build\native\uc-tools-model.targets'))" />
+    <Error Condition="!Exists('packages\uc-tools-skeleton.1.0.17\build\native\uc-tools-skeleton.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-skeleton.1.0.17\build\native\uc-tools-skeleton.props'))" />
+    <Error Condition="!Exists('packages\uc-tools-skeleton.1.0.17\build\native\uc-tools-skeleton.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\uc-tools-skeleton.1.0.17\build\native\uc-tools-skeleton.targets'))" />
   </Target>
-  <Import Project="packages\uc-tools-animation.1.0.10\build\native\uc-tools-animation.targets" Condition="Exists('packages\uc-tools-animation.1.0.10\build\native\uc-tools-animation.targets')" />
-  <Import Project="packages\uc-tools-model.1.0.14\build\native\uc-tools-model.targets" Condition="Exists('packages\uc-tools-model.1.0.14\build\native\uc-tools-model.targets')" />
-  <Import Project="packages\uc-tools-skeleton.1.0.16\build\native\uc-tools-skeleton.targets" Condition="Exists('packages\uc-tools-skeleton.1.0.16\build\native\uc-tools-skeleton.targets')" />
+  <Import Project="packages\uc-tools-animation.1.0.12\build\native\uc-tools-animation.targets" Condition="Exists('packages\uc-tools-animation.1.0.12\build\native\uc-tools-animation.targets')" />
+  <Import Project="packages\uc-tools-model.1.0.16\build\native\uc-tools-model.targets" Condition="Exists('packages\uc-tools-model.1.0.16\build\native\uc-tools-model.targets')" />
+  <Import Project="packages\uc-tools-skeleton.1.0.17\build\native\uc-tools-skeleton.targets" Condition="Exists('packages\uc-tools-skeleton.1.0.17\build\native\uc-tools-skeleton.targets')" />
 </Project>
