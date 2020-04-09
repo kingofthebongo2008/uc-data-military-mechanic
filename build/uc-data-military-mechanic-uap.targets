@@ -13,7 +13,7 @@
     </Content>
 
     <Content Include="$(MSBuildThisFileDirectory)\..\..\lib\uap\skeletons\military_mechanic.skeleton">
-      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'Assets\skeletons\military_mechanic.derivatives_skinned_model.model'))</Link>
+      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'Assets\skeletons\military_mechanic.skeleton'))</Link>
       <DeploymentContent>true</DeploymentContent>
     </Content>
 
