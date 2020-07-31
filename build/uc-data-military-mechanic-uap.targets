@@ -12,6 +12,11 @@
       <DeploymentContent>true</DeploymentContent>
     </Content>
 
+    <Content Include="$(MSBuildThisFileDirectory)\..\..\lib\uap\models\military_mechanic.military_mechanic.derivatives_skinned_multi_material_model.model">
+      <Link>$([MSBuild]::MakeRelative($(TargetDir), 'Assets\models\military_mechanic.military_mechanic.derivatives_skinned_multi_material_model.model'))</Link>
+      <DeploymentContent>true</DeploymentContent>
+    </Content>
+
     <Content Include="$(MSBuildThisFileDirectory)\..\..\lib\uap\skeletons\military_mechanic.skeleton">
       <Link>$([MSBuild]::MakeRelative($(TargetDir), 'Assets\skeletons\military_mechanic.skeleton'))</Link>
       <DeploymentContent>true</DeploymentContent>
